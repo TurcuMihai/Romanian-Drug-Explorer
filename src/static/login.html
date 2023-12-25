@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Romanian Drugs Explorer</title>
+    <link rel="icon" type="image/x-icon" href="./img/logoul.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="./scripts/login.js"></script>
+</head>
+<body>
+    <div class="bg-image">
+
+    </div>
+    <div class="header">
+        <div class="container_logo">
+            <img class="logo" src="./img/logoul.png" alt="logo">
+        </div>
+        <div class="titlu-header">
+            Romanian Drug Explorer
+        </div>
+    </div>
+    <div class="style_login">
+        <div class="container">
+            <label for="uname"><b>Nume de utilizator</b></label>
+            <input type="text" placeholder="Introduceti numele de utilizator" id="username" required>
+            <label for="psw"><b>Parolă</b></label>
+            <input type="password" placeholder="Introduceti parola" id="password" required>
+            <a style="text-decoration: none;" id="creare" href="/SignIn.html">Creare cont</a>
+            <div style="padding: 5px">
+            <button onclick="authenticate()">Conectare</button>
+            </div>
+            <button onclick="anulareLogin()" type="button" class="cancelbtn">Anulare</button>
+        </div>
+    </div>
+</body>
+</html>

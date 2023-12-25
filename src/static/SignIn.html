@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <link rel="stylesheet" href="./css/SignIn.css">
+    <title>Romanian Drugs Explorer</title>
+    <link rel="icon" type="image/x-icon" href="./img/logoul.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="./scripts/login.js"></script>
+</head>
+<body>
+    <div class="bg-image">
+
+    </div>
+    <div class="header">
+        <div class="container_logo">
+            <img class="logo" src="./img/logoul.png" alt="logo">
+        </div>
+        <div class="titlu-header">
+            Romanian Drug Explorer
+        </div>
+    </div>
+    <div class="style_signin">
+        <div class="container">
+
+            <label for="username"><b>Nume de utilizator</b></label>
+            <input type="text" placeholder="Introduceti numele de utilizator" id="username" required>
+
+            <label for="password"><b>Parolă</b></label>
+            <input type="password" placeholder="Introduceti parola" id="password" required>
+
+            <label for="confirmpassword"><b>Confirmare Parolă</b></label>
+            <input type="password" placeholder="Introduceti parola" id="confirmpassword" required>
+            <a style="text-decoration: none;" href="/login.html">Ai deja cont?</a> 
+            <button type="submit" onclick="register()">Crează cont</button>
+            <button type="button" onclick="anulareSignIn()" class="cancelbtn">Anulare</button>
+        </div>
+    </div>
+</body>
+</html>

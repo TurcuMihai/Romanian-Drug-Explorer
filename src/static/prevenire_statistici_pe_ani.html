@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="./css/prevenire_statistici_pe_ani.css">
+    <title>Statistici</title>
+    <link rel="icon" type="image/x-icon" href="./img/logoul.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/1-bar-chart-prevenire.js"></script>
+    <script src="./scripts/2-bar-chart-prevenire.js"></script>
+    <script src="./scripts/statistics.js"></script>
+</head>
+
+<body>
+    <div class="bg-image">
+    </div>
+    <div class="header">
+        <div class="container_logo">
+            <img class="logo" src="./img/logoul.png" alt="logo">
+        </div>
+        <nav class="menu">
+            <div id="admin_account">
+                <a class="btn" href="/acasa.html"><i class="fa fa-home"></i> Acasă</a>
+                <a class="btn" href="/statistici.html"><i class="fa fa-bar-chart"></i> Statistici</a>
+                <a class="btn" href="/despre.html"><i class="fa fa-question-circle"></i> Despre</a>
+                <a class="btn" href="/organizare.html"><i class="fa fa-users"></i>Organizare</a>
+                <a class="btn" href="/contact.html"><i class="fa fa-phone"></i> Contact</a>
+                <a class="btn" href="/login.html"><i class="fa fa-sign-out"></i> Deconectare</a>
+            </div>
+        </nav>
+    </div>
+    <div class="body-background">
+        <div>
+            <h2 class="title">Proiectele și campaniile de prevenire a consumului de droguri: Statistici pe ani</h2>
+        </div>
+        <div class="jutify_between">
+             <div>
+            <label style="margin-left: 10px; font-size: 25px">An</label>
+            <select id="anFilterPickerActivitati" style="margin-left: 5px; width: 80px; font-size: 15px;">
+              <option>TOATE</option>
+            </select>
+            <label style="margin-left: 10px; font-size: 25px;">Locatie</label>
+            <select id="locatieFilterPickerActivitati" style="margin-left: 5px; width: 80px; font-size: 15px;">
+                <option>TOATE</option>
+              </select>
+        </div>
+        </div> 
+        <div>
+        <table class="statistics-table">
+            <thead>
+                <tr>
+                    <th>An</th>
+                    <th>Locatie</th>
+                    <th>Numar de activitati</th>
+                  </tr>
+            </thead>
+            <tbody id="statisticsDataTableActivitati"></tbody>
+        </table>
+        <button class="downloadCSV" id="statisticsActivitatiDownloadCSVButton" onclick="downloadActivitatiCSV()">Download CSV</button>
+        </div>
+        <div class="jutify_between">
+            <div>
+           <label style="margin-left: 10px; font-size: 25px">An</label>
+           <select id="anFilterPickerCampanii" style="margin-left: 5px; width: 80px; font-size: 15px;">
+             <option>TOATE</option>
+           </select>
+           <label style="margin-left: 10px; font-size: 25px;">Nume</label>
+           <select id="numeFilterPickerCampanii" style="margin-left: 5px; width: 80px; font-size: 15px;">
+               <option>TOATE</option>
+             </select>
+       </div>
+       </div> 
+       <div>
+       <table class="statistics-table">
+           <thead>
+               <tr>
+                   <th>An</th>
+                   <th>Numele campaniei</th>
+                   <th>Numar de beneficiari</th>
+                 </tr>
+           </thead>
+           <tbody id="statisticsDataTableCampanii"></tbody>
+       </table>
+       <button class="downloadCSV" id="statisticsCampaniiDownloadCSVButton" onclick="downloadCampaniiCSV()">Download CSV</button>
+       </div>
+       <div class="charts">
+        <div class="jutify_between">
+            <div>
+           <label style="margin-left: 170px; font-size: 25px">An</label>
+           <select id="anFilterPickerFirstBarChartPrevenire" style="margin-left: 5px; width: 80px; font-size: 15px;">
+            <option>-</option>
+           </select>
+       </div>
+        <div class="firstChart">
+            <canvas id="firstBarChartPrevenire"></canvas>
+        </div>   
+        <button class="downloadFirstBarChart"  id="firstBarChartPrevenireDownloadPNGButton">Download PNG</button>
+        <div class="jutify_between">
+            <div>
+           <label style="margin-left: 170px; font-size: 25px">An</label>
+           <select id="anFilterPickerSecondBarChartPrevenire" style="margin-left: 5px; width: 80px; font-size: 15px;">
+            <option>-</option>
+           </select>
+       </div>
+        <div class="secondChart">
+            <canvas id="secondBarChartPrevenire"></canvas>
+        </div>
+        <button class="downloadSecondBarChart" id="secondBarChartPrevenireDownloadPNGButton">Download PNG</button>
+        </div>      
+        </div> 
+    </div> 
+</body>
+<script src="./scripts/1-bar-chart-prevenire.js"></script>
+<script src="./scripts/2-bar-chart-prevenire.js"></script>
+</html>

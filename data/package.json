@@ -1,0 +1,30 @@
+{
+  "name": "asta-bun",
+  "version": "1.0.0",
+  "main": "server.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start_dev": "node server.js & npm run watch-css",
+    "start": "node server.js",
+    "build-css": "node-sass --include-path scss scss/main.scss   static/resources/css/main.css --output-style compressed",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "node-cron": "^3.0.2",
+    "sqlite3": "^5.1.6",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.22"
+  },
+  "description": ""
+  
+}

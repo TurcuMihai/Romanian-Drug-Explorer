@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="./css/urgente_statistici_pe_ani.css">
+    <title>Statistici</title>
+    <link rel="icon" type="image/x-icon" href="./img/logoul.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/statistics.js"></script>
+    <script src="./scripts/pie-chart-urgente.js"></script>
+    <script src="./scripts/1-bar-chart-urgente.js"></script>
+    <script src="./scripts/2-bar-chart-urgente.js"></script>
+</head>
+
+<body>
+    <div class="bg-image">
+    </div>
+    <div class="header">
+        <div class="container_logo">
+            <img class="logo" src="./img/logoul.png" alt="logo">
+        </div>
+        <nav class="menu">
+            <div id="admin_account">
+                <a class="btn" href="/acasa.html"><i class="fa fa-home"></i> Acasă</a>
+                <a class="btn" href="/statistici.html"><i class="fa fa-bar-chart"></i> Statistici</a>
+                <a class="btn" href="/despre.html"><i class="fa fa-question-circle"></i> Despre</a>
+                <a class="btn" href="/organizare.html"><i class="fa fa-users"></i>Organizare</a>
+                <a class="btn" href="/contact.html"><i class="fa fa-phone"></i> Contact</a>
+                <a class="btn" href="/login.html"><i class="fa fa-sign-out"></i> Deconectare</a>
+            </div>
+        </nav>
+    </div>
+    <div class="body-background">
+        <div>
+            <h2 class="title">Urgente medicale datorate consumului de droguri: Statistici pe ani</h2>
+        </div>
+        <div class="jutify_between">
+             <div>
+            <label style="margin-left: 10px; font-size: 25px">An</label>
+            <select id="anFilterPickerUrgente" style="margin-left: 5px; width: 80px; font-size: 15px;">
+              <option>TOATE</option>
+            </select>
+            <label style="margin-left: 10px; font-size: 25px;">Urgenta</label>
+            <select id="urgentaFilterPickerUrgente" style="margin-left: 5px; width: 80px; font-size: 15px;">
+                <option>TOATE</option>
+              </select>
+        </div>
+        </div> 
+        <div>
+        <table class="statistics-table">
+            <thead>
+                <tr>
+                    <th>An</th>
+                    <th>Urgenta</th>
+                    <th>Numarul de urgente</th>
+                  </tr>
+            </thead>
+            <tbody id="statisticsDataTableUrgente"></tbody>
+        </table>
+        <button class="downloadCSV" id="statisticsUrgenteDownloadCSVButton" onclick="downloadUrgenteCSV()">Download CSV</button>
+        </div>
+        <div class="jutify_between">
+            <div>
+           <label style="margin-left: 10px; font-size: 25px">An</label>
+           <select id="anFilterPickerUrgente_drog" style="margin-left: 5px; width: 80px; font-size: 15px;">
+             <option>TOATE</option>
+           </select>
+           <label style="margin-left: 10px; font-size: 25px;">Tipul de drog</label>
+           <select id="drogFilterPickerUrgente_drog" style="margin-left: 5px; width: 80px; font-size: 15px;">
+               <option>TOATE</option>
+             </select>
+       </div>
+       </div>
+        <div>
+            <table class="statistics-table">
+                <thead>
+                    <tr>
+                        <th>An</th>
+                        <th>Tipul drogului</th>
+                        <th>Numarul de urgente</th>
+                      </tr>
+                </thead>
+                <tbody id="statisticsDataTableUrgente_drog"></tbody>
+            </table>
+            <button class="downloadCSV" id="statisticsUrgente_drogDownloadCSVButton" onclick="downloadUrgente_drogCSV()">Download CSV</button>
+            </div>
+        <div class="charts">
+            <div class="jutify_between">
+                <div>
+               <label style="margin-left: 170px; font-size: 25px">An</label>
+               <select id="anFilterPickerPieChartUrgente" style="margin-left: 5px; width: 80px; font-size: 15px;">
+                <option>-</option>
+               </select>
+           </div>
+            <div class="firstChart">
+                <canvas id="pieChartUrgente"></canvas>
+            </div>   
+            <button class="downloadChart"  id="pieChartUrgenteDownloadPNGButton">Download PNG</button>   
+            </div> 
+            <div class="jutify_between">
+                <div>
+               <label style="margin-left: 170px; font-size: 25px">An</label>
+               <select id="anFilterPickerFirstBarChartUrgente" style="margin-left: 5px; width: 80px; font-size: 15px;">
+                <option>-</option>
+               </select>
+           </div>
+            <div class="secondChart">
+                <canvas id="firstBarChartUrgente"></canvas>
+            </div>   
+            <button class="downloadChart"  id="firstBarChartUrgenteDownloadPNGButton">Download PNG</button>   
+            </div> 
+            <div class="jutify_between">
+                <div>
+               <label style="margin-left: 170px; font-size: 25px">An</label>
+               <select id="anFilterPickerSecondBarChartUrgente" style="margin-left: 5px; width: 80px; font-size: 15px;">
+                <option>-</option>
+               </select>
+           </div>
+            <div class="secondChart">
+                <canvas id="secondBarChartUrgente"></canvas>
+            </div>   
+            <button class="downloadChart"  id="secondBarChartUrgenteDownloadPNGButton">Download PNG</button>   
+            </div> 
+        </div>  
+   
+</body>
+<script src="./scripts/pie-chart-urgente.js"></script>
+<script src="./scripts/1-bar-chart-urgente.js"></script>
+<script src="./scripts/2-bar-chart-urgente.js"></script>
+</html>

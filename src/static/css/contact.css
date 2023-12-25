@@ -1,0 +1,141 @@
+.body {
+  padding-top: 160px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+body {
+  background-image: url("../img/blured.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header {
+  background-color: rgb(255, 255, 255);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 152px;
+  display: flex;
+  vertical-align: top;
+  border-bottom: 2px solid;
+  border-bottom-color: rgb(97, 97, 97);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 255, 0, 0.3);
+  z-index: 6;
+}
+
+.container_logo {
+  height: 150px;
+  width: 300px;
+  padding-left: 80px;
+}
+
+.logo {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.menu {
+  flex: 1;
+  vertical-align: top;
+  padding-top: 2%;
+  padding-right: 0px;
+  text-align: left;
+  font-size: 50px;
+  font-family: cursive;
+}
+
+.btn {
+  margin-right: 1%;
+  text-decoration: none;
+  border: 5px solid rgb(51, 77, 0);
+  border-radius: 15px;
+  color: rgb(56, 60, 48);
+  font-size: 30px;
+}
+
+.btn:hover {
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.8);
+}
+
+.btn:active {
+  background-color: rgb(211, 250, 205);
+}
+
+.titlu {
+  border: 2px transparent hsl(0, 0%, 0%);
+  background-color: rgba(211, 250, 205, 0.7);
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  box-shadow: 0 0 20px rgb(0, 255, 255);
+  position: absolute;
+  top: 152px;
+  border-radius: 15px;
+  font-size: 50px;
+  font-family: cursive;
+  color: rgb(0, 255, 255);
+  width: 50%;
+  left: 35%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  z-index: 5;
+}
+
+.student {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  position: absolute;
+  top: 400px;
+  left: 5%;
+  right: 5%;
+}
+
+.nume {
+  font-size: 40px;
+  color: rgb(3, 3, 3);
+  font-family: cursive;
+  font-weight: bold;
+  font-style: oblique;
+  background-color: greenyellow;
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-right: 5px;
+}
+
+.studinfo {
+  font-size: 25px;
+  color: rgb(0, 255, 255);
+  font-family: cursive;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: rgba(42, 43, 42, 0.5);
+}
+
+span {
+  font-size: 25px;
+  color: black;
+  font-family: cursive;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #fa6000;
+  color: white;
+}

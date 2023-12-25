@@ -1,0 +1,135 @@
+body {
+  background-image: url("../img/blured.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 1400px;
+  padding-top: 180px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.header {
+  background-color: rgb(255, 255, 255);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 152px;
+  display: flex;
+  vertical-align: top;
+  border-bottom: 2px solid;
+  border-bottom-color: rgb(97, 97, 97);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 255, 0, 0.3);
+  z-index: 5;
+}
+
+.container_logo {
+  height: 150px;
+  width: 300px;
+  padding-left: 80px;
+}
+
+.logo {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.menu {
+  flex: 1;
+  vertical-align: top;
+  padding-top: 2%;
+  padding-right: 0px;
+  text-align: left;
+  font-size: 50px;
+  font-family: cursive;
+}
+
+.btn {
+  margin-right: 1%;
+  text-decoration: none;
+  border: 5px solid rgb(51, 77, 0);
+  border-radius: 15px;
+  color: rgb(56, 60, 48);
+  font-size: 30px;
+}
+
+.btn:hover {
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.8);
+}
+
+.btn:active {
+  background-color: rgb(211, 250, 205);
+}
+
+.titlu {
+  background-color: rgba(109, 109, 195, 0.5);
+  height: 200px;
+  width: 50%;
+  left: 25%;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 45px;
+  font-family: cursive;
+  position: relative;
+  border-radius: 10px;
+  border: 4px black transparent;
+  color: rgb(1, 1, 57);
+}
+
+.angajatiInfo {
+  background-color: rgba(192, 251, 203, 0.4);
+  height: 300px;
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 35px;
+}
+
+.echipa {
+  background-color: rgba(192, 251, 203, 0.4);
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 35px;
+  color: #30006b;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+.poza {
+  display: inline-block;
+  height: 300px;
+  width: 400px;
+  vertical-align: top;
+}
+
+.info {
+  display: inline-block;
+  vertical-align: top;
+  width: 1000px;
+  height: 100%;
+  font-size: 25px;
+  font-family: cursive;
+  margin-left: 20px;
+}
+
+.profileimage {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+span {
+  font-weight: bold;
+  text-decoration: underline;
+  font-style: italic;
+}

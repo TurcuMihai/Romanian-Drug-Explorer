@@ -1,0 +1,17 @@
+img {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 20px;
+}
+.info {
+    text-align: center;
+}
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: rgba(167, 240, 163, 0.4);
+}
+

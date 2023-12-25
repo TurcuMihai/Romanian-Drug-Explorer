@@ -1,0 +1,129 @@
+body {
+  background-image: url("../img/blured.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header {
+  background-color: rgb(255, 255, 255);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 152px;
+  display: flex;
+  vertical-align: top;
+  border-bottom: 2px solid;
+  border-bottom-color: rgb(97, 97, 97);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 255, 0, 0.3);
+}
+
+.container_logo {
+  height: 150px;
+  width: 300px;
+  padding-left: 80px;
+}
+
+.logo {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.menu {
+  flex: 1;
+  vertical-align: top;
+  padding-top: 2%;
+  padding-right: 0px;
+  text-align: right;
+  font-size: 50px;
+  font-family: cursive;
+}
+
+.btn {
+  margin-right: 4%;
+  text-decoration: none;
+  border: 5px solid rgb(51, 77, 0);
+  border-radius: 15px;
+  color: rgb(56, 60, 48);
+  font-size: 30px;
+}
+
+.btn:hover {
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.8);
+}
+
+.btn:active {
+  background-color: rgb(211, 250, 205);
+}
+
+.style_signin {
+  border: 3px solid hsl(0, 0%, 0%);
+  background-color: rgb(211, 250, 205);
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 30%;
+  left: 34%;
+  border-radius: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #1ec223;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  background-color: #ff1100;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.container {
+  padding: 20px;
+  z-index: 2;
+  top: 225px;
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    width: 80%;
+  }
+}
+
+.titlu-header {
+  flex: 1;
+  margin-left: 15%;
+  font-size: 60px;
+  margin-top: 40px;
+  font-family: cursive;
+  color: rgb(40, 15, 203);
+}
